@@ -19,6 +19,7 @@ to the mainnet or testnet.}
 Returns the corresponding WIF key from a private key
 }
 \examples{
+suppressWarnings(RNGversion("3.5.0"))
 pk <- createPrivateKey()
 PrivKey2Wif(pk)
 }

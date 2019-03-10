@@ -18,6 +18,7 @@ contain the \code{0x} prefix, to a \code{list} object with the associated
 integers as its elements.
 }
 \examples{
+suppressWarnings(RNGversion("3.5.0"))
 pk <- createPrivateKey()
 decodeHex(pk)
 }

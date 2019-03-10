@@ -16,6 +16,7 @@ Wif2PrivKey(wif)
 Returns the corresponding private key from a WIF key.
 }
 \examples{
+suppressWarnings(RNGversion("3.5.0"))
 pk1 <- createPrivateKey()
 wif <- PrivKey2Wif(pk1)
 pk2 <- Wif2PrivKey(wif)

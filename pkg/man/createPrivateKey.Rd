@@ -13,6 +13,7 @@ createPrivateKey()
 Returns a random 256-bit private key in hex notation.
 }
 \examples{
+suppressWarnings(RNGversion("3.5.0"))
 createPrivateKey()
 }
 \references{

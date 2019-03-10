@@ -20,6 +20,7 @@ and returns a \code{list} object of the associated
 integers.
 }
 \examples{
+suppressWarnings(RNGversion("3.5.0"))
 h1 <- "80"
 h2 <- createPrivateKey()
 concatHex(h1, h2)
