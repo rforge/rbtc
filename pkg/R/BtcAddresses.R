@@ -11,6 +11,7 @@
 #' @aliases createPrivateKey
 #' @rdname createPrivateKey
 #' @examples
+#' suppressWarnings(RNGversion("3.5.0"))
 #' createPrivateKey()
 #' @export
 createPrivateKey <- function(){
@@ -40,6 +41,7 @@ createPrivateKey <- function(){
 #' @aliases PrivKey2Wif
 #' @rdname PrivKey2Wif
 #' @examples
+#' suppressWarnings(RNGversion("3.5.0"))
 #' pk <- createPrivateKey()
 #' PrivKey2Wif(pk)
 #' @export
@@ -73,6 +75,7 @@ PrivKey2Wif <- function(privkey, mainnet = TRUE){
 #' @aliases Wif2PrivKey
 #' @rdname Wif2PrivKey
 #' @examples
+#' suppressWarnings(RNGversion("3.5.0"))
 #' pk1 <- createPrivateKey()
 #' wif <- PrivKey2Wif(pk1)
 #' pk2 <- Wif2PrivKey(wif)
@@ -247,6 +250,7 @@ createBtcAdr <- function (privkey, mainnet = TRUE) {
 #' @aliases decodeHex
 #' @rdname decodeHex
 #' @examples
+#' suppressWarnings(RNGversion("3.5.0"))
 #' pk <- createPrivateKey()
 #' decodeHex(pk)
 #' @export
@@ -272,6 +276,7 @@ decodeHex <- function(s){
 #' @aliases concatHex
 #' @rdname concatHex
 #' @examples
+#' suppressWarnings(RNGversion("3.5.0"))
 #' h1 <- "80"
 #' h2 <- createPrivateKey()
 #' concatHex(h1, h2)
